@@ -99,7 +99,7 @@ jobs:
           setarch $(uname -m) -R taskset -c "$(cat /sys/devices/system/cpu/isolated)" make ${{ matrix.target }} | tee target/criterion/out
       # We keep the Criterion results no matter what, but where they're uploaded depends on whether
       # this is a PR run or a master run.
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: "criterion"
           path: "./target/criterion"
