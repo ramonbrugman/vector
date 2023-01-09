@@ -1,10 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     citrus (3.0.2)
-    git (1.7.0)
+    git (1.13.0)
+      addressable (~> 2.8)
       rchardet (~> 1.8)
     paint (2.2.0)
+    public_suffix (5.0.1)
     rchardet (1.8.0)
     semantic (1.6.1)
     toml-rb (2.0.1)
@@ -14,7 +18,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  git (~> 1.7.0)
+  git (~> 1.13.0)
   paint (~> 2.1)
   semantic (~> 1.6.1)
   toml-rb (~> 2.0)
